@@ -1,0 +1,8 @@
+const esbuild=require('esbuild'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const root=path.resolve(__dirname,'..');
+esbuild.buildSync({absWorkingDir:root,entryPoints:['src/rdev-glass.jsx'],bundle:true,format:'iife',platform:'browser',target:'chrome140',minify:true,legalComments:'eof',define:{'process.env.NODE_ENV':'"production"'},outfile:'dist/vendor/rdev-glass.js'});
+const libraries=['liquid-glass-react','react','react-dom','scheduler'];
+const notices=libraries.map(name=>`${name}\n${fs.readFileSync(path.join(path.dirname(require.resolve(name+'/package.json')),'LICENSE'),'utf8')}\n`);
+fs.writeFileSync(path.join(root,'dist/vendor/rdev-glass-LICENSE.txt'),notices.join('\n'));
+const entry=path.join(root,'node_modules/liquid-glass-react/dist/index.esm.js');
+fs.writeFileSync(path.join(root,'dist/vendor/rdev-glass-provenance.json'),JSON.stringify({repository:'https://github.com/rdev/liquid-glass-react',package:'liquid-glass-react',version:require('liquid-glass-react/package.json').version,sourceSha256:crypto.createHash('sha256').update(fs.readFileSync(entry)).digest('hex'),reactVersion:require('react/package.json').version,sourceUnmodified:true,adapter:'src/rdev-glass.jsx',build:'scripts/build-glass.cjs',scope:'Upstream React component and highlights with an Electron direct-backdrop lens adapter; external desktop pixels are not captured.',adapterOptics:'src/optical-map.js: cached rounded-rectangle normals, a 5–8px unblurred edge displacement mask, magnification and Gaussian blur; an inset CSS reading-diffusion plate precedes SVG optics. White concentration updates both the plate and other app surfaces.'},null,2));

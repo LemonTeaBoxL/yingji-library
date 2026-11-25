@@ -1,0 +1,318 @@
+{
+  "currentVersion": "0.4.14",
+  "files": [
+    {
+      "sha256": "0abe476be0d8662a98e6d913c820663a7f68e551ba1ec54390d7517fcd3d54d5",
+      "path": "历史版本\\0.4.0\\程序\\映迹资料库-0.4.0.exe",
+      "original": "映迹资料库-0.4.0.exe",
+      "bytes": 164258039
+    },
+    {
+      "sha256": "8862fb38c024e36256b04fea534814a860944dba8e5a830a82f249e8192f4d39",
+      "path": "历史版本\\0.4.1\\程序\\映迹资料库-0.4.1.exe",
+      "original": "映迹资料库-0.4.1.exe",
+      "bytes": 172349832
+    },
+    {
+      "sha256": "8d2799a4456a2829e2912ba4ef076358f29304095407dd289982319dfd76fb06",
+      "path": "历史版本\\0.4.10\\程序\\映迹资料库-0.4.10.exe",
+      "original": "映迹资料库-0.4.10.exe",
+      "bytes": 174903347
+    },
+    {
+      "sha256": "4fb0089976e058f34ca4940aa4e8583a2349f8ba89ad0e935cbff5173605389b",
+      "path": "历史版本\\0.4.11\\程序\\映迹资料库-0.4.11.exe",
+      "original": "映迹资料库-0.4.11.exe",
+      "bytes": 174903584
+    },
+    {
+      "sha256": "4533d06d74205eb339e3f366e75ae0f73cee0364673fdf6316630b7ff257bcb3",
+      "path": "历史版本\\0.4.12\\程序\\映迹资料库-0.4.12.exe",
+      "original": "映迹资料库-0.4.12.exe",
+      "bytes": 174908463
+    },
+    {
+      "sha256": "15f0485dcdca0949c239cfcc310c56c3cf4432678c36fd17aab3635cb1c02840",
+      "path": "历史版本\\0.4.13\\程序\\映迹资料库-0.4.13.exe",
+      "original": "映迹资料库-0.4.13.exe",
+      "bytes": 174923383
+    },
+    {
+      "sha256": "694d976fa7ec1ba116d9b40e9012b6a422e1aebd98d1008eff73ab97d4a7926d",
+      "path": "历史版本\\0.4.2\\程序\\映迹资料库-0.4.2.exe",
+      "original": "映迹资料库-0.4.2.exe",
+      "bytes": 172474149
+    },
+    {
+      "sha256": "25bc36a329e91e56356a8ad443a0b3da9e859222b657647c6da2ad0db8bd3722",
+      "path": "历史版本\\0.4.3\\程序\\映迹资料库-0.4.3.exe",
+      "original": "映迹资料库-0.4.3.exe",
+      "bytes": 172448012
+    },
+    {
+      "sha256": "41c11f84b93a21ef63cea9fb3e0365354a548e8b9f24a2dfd5988aa6b397dd23",
+      "path": "历史版本\\0.4.4\\程序\\映迹资料库-0.4.4.exe",
+      "original": "映迹资料库-0.4.4.exe",
+      "bytes": 172473649
+    },
+    {
+      "sha256": "bd07163595fd45270a4d0cee3e051a6ce897aa1862fbcff04725d90968875cb8",
+      "path": "历史版本\\0.4.5\\程序\\映迹资料库-0.4.5.exe",
+      "original": "映迹资料库-0.4.5.exe",
+      "bytes": 172491094
+    },
+    {
+      "sha256": "c609c3e2d9b3fb93cf09bd125b4134b83a6ce5ccb4ef2f0d5423706509e2ff73",
+      "path": "历史版本\\0.4.6\\程序\\映迹资料库-0.4.6.exe",
+      "original": "映迹资料库-0.4.6.exe",
+      "bytes": 172490931
+    },
+    {
+      "sha256": "6cced6390048be5dec46765b224838625343c896750018eec953448a0c5cd67c",
+      "path": "历史版本\\0.4.7\\程序\\映迹资料库-0.4.7.exe",
+      "original": "映迹资料库-0.4.7.exe",
+      "bytes": 174898774
+    },
+    {
+      "sha256": "293e221db3f9107247dadb7898e3a89ce1bce66cd1ddb54b4b077da491f336f2",
+      "path": "历史版本\\0.4.8\\程序\\映迹资料库-0.4.8.exe",
+      "original": "映迹资料库-0.4.8.exe",
+      "bytes": 174893138
+    },
+    {
+      "sha256": "71552cd875c7799002fbb9a674f2e58209bbb326546d56abce8255d47ca56bc5",
+      "path": "历史版本\\0.4.9\\程序\\映迹资料库-0.4.9.exe",
+      "original": "映迹资料库-0.4.9.exe",
+      "bytes": 174897512
+    },
+    {
+      "sha256": "2854773cdef095fc05c922104d6ab8fd9d03bcb5ea4a10d88f735e7ca7c87a01",
+      "path": "历史版本\\未标注版本\\程序\\映迹资料库-液态玻璃版.exe",
+      "original": "映迹资料库-液态玻璃版.exe",
+      "bytes": 164236707
+    },
+    {
+      "sha256": "97f363cf9792bfef403856e2cc526004aa91c826085617350a29a308d9821fbc",
+      "path": "历史版本\\未标注版本\\程序\\映迹资料库.exe",
+      "original": "映迹资料库.exe",
+      "bytes": 164200921
+    },
+    {
+      "sha256": "927930aa69b7350be7d3fb755d6671dad86ae99d2bffa433aa35af4923a09d76",
+      "path": "历史版本\\0.4.0\\截图\\0.4.0-背景与窗口按钮.png",
+      "original": "releases\\0.4.0-背景与窗口按钮.png",
+      "bytes": 338677
+    },
+    {
+      "sha256": "a1d78ac2bd600bf49a6dd5a594ab7bfbd279020817bda7ab51a58fec581c884b",
+      "path": "历史版本\\0.4.0\\截图\\0.4.0-缓存管理.png",
+      "original": "releases\\0.4.0-缓存管理.png",
+      "bytes": 368842
+    },
+    {
+      "sha256": "dc3099441009e1aef24a6f344ee7ace290aad4c5409a383a4e7c7ded907a38a2",
+      "path": "历史版本\\0.4.0\\截图\\0.4.0-我的空间.png",
+      "original": "releases\\0.4.0-我的空间.png",
+      "bytes": 225022
+    },
+    {
+      "sha256": "5be8456b4697648261becebaaabbd4fe270e7da9eded2a7afefea985ef0ba48e",
+      "path": "历史版本\\0.4.2\\截图\\0.4.2-玻璃设置.png",
+      "original": "releases\\0.4.2-玻璃设置.png",
+      "bytes": 496850
+    },
+    {
+      "sha256": "42641e6145ef285b859c0be433e08ba7cdc2b1b76271aee37bab5cfaefd0b6b1",
+      "path": "历史版本\\0.4.2\\截图\\0.4.2-我的空间.png",
+      "original": "releases\\0.4.2-我的空间.png",
+      "bytes": 456799
+    },
+    {
+      "sha256": "d1e1f7c45089f59da451b080a0bb892cfde8009fded84fe5a8796cec51045d62",
+      "path": "历史版本\\0.4.3\\截图\\0.4.3-玻璃设置.png",
+      "original": "releases\\0.4.3-玻璃设置.png",
+      "bytes": 511490
+    },
+    {
+      "sha256": "f31a81354c7d0d8cb9973762e81b3c98fbbd3abbdac6c42058041a4b72077e2e",
+      "path": "历史版本\\0.4.3\\截图\\0.4.3-我的空间.png",
+      "original": "releases\\0.4.3-我的空间.png",
+      "bytes": 408983
+    },
+    {
+      "sha256": "b7d9245d98876719076876e1609bae3f11b456a732b3378eea8ba5b89e10e449",
+      "path": "历史版本\\0.4.3\\截图\\0.4.3-详情阅读.png",
+      "original": "releases\\0.4.3-详情阅读.png",
+      "bytes": 626312
+    },
+    {
+      "sha256": "94e98e69e4166d237b2a877205d5786632bc411cee50573c45b9c0e5d506c9d0",
+      "path": "历史版本\\0.4.4\\截图\\0.4.4-玻璃设置.png",
+      "original": "releases\\0.4.4-玻璃设置.png",
+      "bytes": 509079
+    },
+    {
+      "sha256": "e58e5d2069917be587abc0f5d2918642f8748e3b4f41dd919fdf5cc90aebf77b",
+      "path": "历史版本\\0.4.4\\截图\\0.4.4-我的空间.png",
+      "original": "releases\\0.4.4-我的空间.png",
+      "bytes": 334188
+    },
+    {
+      "sha256": "56f02db5c0c21d9c7be4d515c6b8c8716ebe663057b1fb239d1857f635d272cd",
+      "path": "历史版本\\0.4.4\\截图\\0.4.4-详情磨砂.png",
+      "original": "releases\\0.4.4-详情磨砂.png",
+      "bytes": 614644
+    },
+    {
+      "sha256": "43682b3dc2178ce0c60a7deaeacfd7e1907048970d3b382d44e3207dcb1a0bf7",
+      "path": "历史版本\\0.4.4\\截图\\0.4.4-夜间玻璃.png",
+      "original": "releases\\0.4.4-夜间玻璃.png",
+      "bytes": 578177
+    },
+    {
+      "sha256": "68bb3c07a6238d64c52d29f38e420f5b9a40063c75a4ea8601a584113955e083",
+      "path": "历史版本\\0.4.5\\截图\\0.4.5-我的空间.png",
+      "original": "releases\\0.4.5-我的空间.png",
+      "bytes": 320670
+    },
+    {
+      "sha256": "189d8a1a1028fedd18747e0e91c97a4b0fbd9b963cc127015bd26e59becdfe88",
+      "path": "历史版本\\0.4.5\\截图\\0.4.5-详情磨砂.png",
+      "original": "releases\\0.4.5-详情磨砂.png",
+      "bytes": 500338
+    },
+    {
+      "sha256": "a996bcf32f716c4fc4b3b00c6937d72e2508319e75bb227df6e109894adf4666",
+      "path": "历史版本\\0.4.5\\截图\\0.4.5-资料库.png",
+      "original": "releases\\0.4.5-资料库.png",
+      "bytes": 316748
+    },
+    {
+      "sha256": "9e34baa2ee6c7e3a97ae26d2dc5e4cc7aa1e07181fa2bc228bdc7f8436b343eb",
+      "path": "历史版本\\0.4.6\\截图\\0.4.6-单集进度.png",
+      "original": "releases\\0.4.6-单集进度.png",
+      "bytes": 467370
+    },
+    {
+      "sha256": "133f7bd04fa19793054322569a6bf96fc88da674277b1eda9991e47f275e65a2",
+      "path": "历史版本\\0.4.6\\截图\\0.4.6-快捷外观.png",
+      "original": "releases\\0.4.6-快捷外观.png",
+      "bytes": 420828
+    },
+    {
+      "sha256": "7ba4203309ddc8527fb7e6ee7b965c46ecb5a835fc1ba8dcfb5c4df7c9b8fc20",
+      "path": "历史版本\\0.4.6\\截图\\0.4.6-两行筛选.png",
+      "original": "releases\\0.4.6-两行筛选.png",
+      "bytes": 353803
+    },
+    {
+      "sha256": "0322ce10abe42090df471259a890d0106367997f259ec630449ff26495cc058d",
+      "path": "历史版本\\未标注版本\\截图\\界面预览-玻璃设置.png",
+      "original": "releases\\界面预览-玻璃设置.png",
+      "bytes": 525172
+    },
+    {
+      "sha256": "1948f8f2af3e042e3a2848b8ceeac8d6fc5b9eab9089bfef0b1c16919b7c8e0f",
+      "path": "历史版本\\0.2.0\\发行包\\映迹资料库-0.2.0-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.2.0-Windows-x64.exe",
+      "bytes": 164206185
+    },
+    {
+      "sha256": "97f363cf9792bfef403856e2cc526004aa91c826085617350a29a308d9821fbc",
+      "path": "历史版本\\0.2.1\\发行包\\映迹资料库-0.2.1-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.2.1-Windows-x64.exe",
+      "bytes": 164200921
+    },
+    {
+      "sha256": "2854773cdef095fc05c922104d6ab8fd9d03bcb5ea4a10d88f735e7ca7c87a01",
+      "path": "历史版本\\0.3.0\\发行包\\映迹资料库-0.3.0-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.3.0-Windows-x64.exe",
+      "bytes": 164236707
+    },
+    {
+      "sha256": "0abe476be0d8662a98e6d913c820663a7f68e551ba1ec54390d7517fcd3d54d5",
+      "path": "历史版本\\0.4.0\\发行包\\映迹资料库-0.4.0-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.0-Windows-x64.exe",
+      "bytes": 164258039
+    },
+    {
+      "sha256": "8862fb38c024e36256b04fea534814a860944dba8e5a830a82f249e8192f4d39",
+      "path": "历史版本\\0.4.1\\发行包\\映迹资料库-0.4.1-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.1-Windows-x64.exe",
+      "bytes": 172349832
+    },
+    {
+      "sha256": "8d2799a4456a2829e2912ba4ef076358f29304095407dd289982319dfd76fb06",
+      "path": "历史版本\\0.4.10\\发行包\\映迹资料库-0.4.10-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.10-Windows-x64.exe",
+      "bytes": 174903347
+    },
+    {
+      "sha256": "4fb0089976e058f34ca4940aa4e8583a2349f8ba89ad0e935cbff5173605389b",
+      "path": "历史版本\\0.4.11\\发行包\\映迹资料库-0.4.11-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.11-Windows-x64.exe",
+      "bytes": 174903584
+    },
+    {
+      "sha256": "4533d06d74205eb339e3f366e75ae0f73cee0364673fdf6316630b7ff257bcb3",
+      "path": "历史版本\\0.4.12\\发行包\\映迹资料库-0.4.12-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.12-Windows-x64.exe",
+      "bytes": 174908463
+    },
+    {
+      "sha256": "15f0485dcdca0949c239cfcc310c56c3cf4432678c36fd17aab3635cb1c02840",
+      "path": "历史版本\\0.4.13\\发行包\\映迹资料库-0.4.13-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.13-Windows-x64.exe",
+      "bytes": 174923383
+    },
+    {
+      "sha256": "694d976fa7ec1ba116d9b40e9012b6a422e1aebd98d1008eff73ab97d4a7926d",
+      "path": "历史版本\\0.4.2\\发行包\\映迹资料库-0.4.2-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.2-Windows-x64.exe",
+      "bytes": 172474149
+    },
+    {
+      "sha256": "25bc36a329e91e56356a8ad443a0b3da9e859222b657647c6da2ad0db8bd3722",
+      "path": "历史版本\\0.4.3\\发行包\\映迹资料库-0.4.3-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.3-Windows-x64.exe",
+      "bytes": 172448012
+    },
+    {
+      "sha256": "41c11f84b93a21ef63cea9fb3e0365354a548e8b9f24a2dfd5988aa6b397dd23",
+      "path": "历史版本\\0.4.4\\发行包\\映迹资料库-0.4.4-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.4-Windows-x64.exe",
+      "bytes": 172473649
+    },
+    {
+      "sha256": "bd07163595fd45270a4d0cee3e051a6ce897aa1862fbcff04725d90968875cb8",
+      "path": "历史版本\\0.4.5\\发行包\\映迹资料库-0.4.5-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.5-Windows-x64.exe",
+      "bytes": 172491094
+    },
+    {
+      "sha256": "c609c3e2d9b3fb93cf09bd125b4134b83a6ce5ccb4ef2f0d5423706509e2ff73",
+      "path": "历史版本\\0.4.6\\发行包\\映迹资料库-0.4.6-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.6-Windows-x64.exe",
+      "bytes": 172490931
+    },
+    {
+      "sha256": "6cced6390048be5dec46765b224838625343c896750018eec953448a0c5cd67c",
+      "path": "历史版本\\0.4.7\\发行包\\映迹资料库-0.4.7-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.7-Windows-x64.exe",
+      "bytes": 174898774
+    },
+    {
+      "sha256": "293e221db3f9107247dadb7898e3a89ce1bce66cd1ddb54b4b077da491f336f2",
+      "path": "历史版本\\0.4.8\\发行包\\映迹资料库-0.4.8-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.8-Windows-x64.exe",
+      "bytes": 174893138
+    },
+    {
+      "sha256": "71552cd875c7799002fbb9a674f2e58209bbb326546d56abce8255d47ca56bc5",
+      "path": "历史版本\\0.4.9\\发行包\\映迹资料库-0.4.9-Windows-x64.exe",
+      "original": "releases\\映迹资料库-0.4.9-Windows-x64.exe",
+      "bytes": 174897512
+    }
+  ],
+  "archivedOn": "2026-11-25"
+}

@@ -1,0 +1,41 @@
+:root{--motion-out:cubic-bezier(.23,1,.32,1);--motion-soft:cubic-bezier(.22,.68,0,1.01);--motion-fast:140ms;--motion-surface:200ms}
+body.desktop-app :is(.button,.action-pill,.icon-button,.sheet-close,.sidebar-nav button,.select-trigger,.inline-density button,.view-switch button,.detail-tablist button,.material-magnify,.ep-cycle){transition-property:transform,opacity,color,background-color,border-color;transition-duration:var(--motion-fast);transition-timing-function:var(--motion-out)}
+body.desktop-app :is(button,input,textarea,select,a):focus-visible{outline:2px solid color-mix(in srgb,var(--accent) 75%,white);outline-offset:3px}
+.nav-count,.selection-count,#resultCount,.source-pill,.status-task{font-variant-numeric:tabular-nums}
+.action-pill>svg{transform-origin:center;transform-box:view-box}
+.window-controls button:before{content:'';position:absolute;inset:-4px;border-radius:50%}
+.sidebar-nav button.active{color:var(--copy)}
+.glass-menu{transform-origin:var(--menu-origin,top center);transition:opacity 160ms var(--motion-out),transform 180ms var(--motion-out);transform:translateY(var(--menu-shift,-4px)) scale(.98)}
+.glass-menu.visible{transform:none}.glass-menu:not(.visible){pointer-events:none}.glass-menu[data-instant=true]{transition:none}
+.glass-menu>button{transition:background-color 120ms ease,color 120ms ease}
+body[data-app-motion=full][data-input-mode=pointer] #overlay{opacity:1;transition:opacity 200ms var(--motion-out),display 200ms;transition-behavior:allow-discrete}
+body[data-app-motion=full][data-input-mode=pointer] #overlay[hidden]{opacity:0;transition-duration:140ms}
+@starting-style{body[data-app-motion=full][data-input-mode=pointer] #overlay:not([hidden]){opacity:0}}
+.material-hover-preview{transition:opacity 170ms var(--motion-out),visibility 170ms}
+.material-preview-frame{transform:scale(.985);transition:transform 180ms var(--motion-out)}
+.material-hover-preview.visible .material-preview-frame{transform:scale(1)}
+.toast{transition-property:opacity,transform;transition-duration:220ms;transition-timing-function:var(--motion-out)}
+body.desktop-app .media-card{transition:transform 160ms var(--motion-out),opacity 140ms ease}
+body.desktop-app :is(.search,.form-input){transition:border-color 140ms ease,background-color 140ms ease}
+.catalog-skeleton{position:relative;overflow:hidden;animation:none!important;background:var(--surface2)!important}
+body[data-app-motion=full] .catalog-skeleton:after{content:'';position:absolute;inset:0;background:linear-gradient(100deg,transparent,#ffffff25,transparent);transform:translateX(-100%);animation:yingji-shimmer 1100ms linear infinite}
+@keyframes yingji-shimmer{to{transform:translateX(100%)}}
+@media(hover:hover) and (pointer:fine){body[data-app-motion=full][data-input-mode=pointer] :is(.button,.action-pill,.icon-button,.sheet-close,.sidebar-nav button,.select-trigger,.inline-density button,.view-switch button,.detail-tablist button,.material-magnify,.ep-cycle):active{transform:scale(.98)!important}body[data-app-motion=full][data-input-mode=pointer] .window-controls button:active{transform:scale(.92)}body[data-app-motion=full][data-input-mode=pointer] .media-card:hover{transform:translateY(-2px)}}
+body[data-app-motion=off] :is(.button,.action-pill,.media-card,.sheet-close,.sidebar-nav button,.select-trigger,.glass-menu,.material-hover-preview,.material-preview-frame,.toast,#overlay),body[data-input-mode=keyboard] :is(.button,.action-pill,.media-card,.sheet-close,.sidebar-nav button,.select-trigger,.glass-menu,.material-hover-preview,.material-preview-frame,.toast,#overlay){transition:none!important;animation:none!important}
+body[data-app-motion=off] .media-card:hover,body[data-input-mode=keyboard] .media-card:hover,body[data-app-motion=quiet] .media-card:hover{transform:none!important}
+body[data-app-motion=quiet] :is(.glass-menu,.material-hover-preview,#overlay){transition:opacity 80ms ease,visibility 80ms;transform:none}
+body[data-app-motion=quiet] #overlay[hidden]{opacity:0}body[data-app-motion=quiet] .material-preview-frame{transform:none;transition:none}
+@media(prefers-reduced-motion:reduce){body.desktop-app :is(.media-card,.button,.action-pill,.sidebar-nav button,.material-preview-frame){transform:none!important;animation:none!important}.catalog-skeleton:after{animation:none!important}}
+@media(prefers-reduced-transparency:reduce){.rdev-react-root{backdrop-filter:none}.rdev-react-root .glass:after{background:var(--page)!important}.glass-menu{background:var(--page)!important;backdrop-filter:none!important}}
+@media(prefers-contrast:more){.rdev-react-root .glass:after{background:var(--page)!important}.rdev-glass-host,.glass-menu,.action-pill,.select-trigger{border-color:var(--subtle)!important}.nav-label,.detail-description,.source-rating{color:var(--copy)!important}}
+/* Keep the modal's material outside any animated ancestor backdrop root. */
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer] #overlay{opacity:1;transition:display 200ms;transition-behavior:allow-discrete}
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer] #overlay[hidden]{opacity:1;transition-duration:170ms}
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer] #overlay>.sheet,
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer] #overlay:before,
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer] .rdev-modal-surface{opacity:1;transition:opacity 200ms var(--motion-out)}
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer] #overlay[hidden]>.sheet,
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer] #overlay[hidden]:before,
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer]:has(#overlay[hidden]) .rdev-modal-surface{opacity:0;transition-duration:140ms}
+@starting-style{body.liquid-ui[data-app-motion=full][data-input-mode=pointer] #overlay:not([hidden]){opacity:1}body.liquid-ui[data-app-motion=full][data-input-mode=pointer] #overlay:not([hidden])>.sheet,body.liquid-ui[data-app-motion=full][data-input-mode=pointer] #overlay:not([hidden]):before,body.liquid-ui[data-app-motion=full][data-input-mode=pointer] .rdev-modal-surface{opacity:0}}
+body.liquid-ui[data-app-motion=quiet] #overlay,body.liquid-ui[data-app-motion=quiet] #overlay[hidden]{opacity:1}

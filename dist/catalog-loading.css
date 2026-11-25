@@ -1,0 +1,4 @@
+.catalog-load-actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px}
+.catalog-load-progress{display:block;margin-top:12px;color:var(--subtle);font-size:12px;font-variant-numeric:tabular-nums}
+.catalog-load-note{max-width:600px;margin:12px auto 0;color:var(--subtle);font-size:13px;line-height:1.7;text-wrap:pretty}
+.catalog-load-actions [data-catalog-stop]{min-height:40px}

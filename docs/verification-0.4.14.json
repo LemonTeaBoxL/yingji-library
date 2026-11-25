@@ -1,0 +1,22 @@
+{
+  "version": "0.4.14",
+  "passed": true,
+  "focusedUnitChecks": 6,
+  "sourceChecks": 21,
+  "packedChecks": 21,
+  "sourceFilesMatched": 100,
+  "rendererErrors": [],
+  "testing": "Isolated client library with 220 works and 100 media items. Scrolled to end without clicking, retained card identity and positions, name order and selection. Covered status filters, all personal routes, detail pause/resume, stale navigation callbacks, empty filters and list controls.",
+  "userLibraryModified": false,
+  "portable": {
+    "passed": true,
+    "isolatedProfile": true,
+    "items": 1,
+    "legacyMigrated": "desktop",
+    "readOnly": true
+  },
+  "executable": {
+    "bytes": 174920368,
+    "sha256": "9d74763e09120edff3925d9d1e60e5f1c758f8a85f144be186b3084e864e51c4"
+  }
+}

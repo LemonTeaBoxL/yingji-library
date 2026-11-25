@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/rdev/liquid-glass-react",
+  "package": "liquid-glass-react",
+  "version": "1.1.1",
+  "sourceSha256": "b639aaaac7d0f88d9a261dcf86fb8f47329aef0e713bd3d9962559ca03c65f72",
+  "reactVersion": "19.3.1",
+  "sourceUnmodified": true,
+  "adapter": "src/rdev-glass.jsx",
+  "build": "scripts/build-glass.cjs",
+  "scope": "Upstream React component and highlights with an Electron direct-backdrop lens adapter; external desktop pixels are not captured.",
+  "adapterOptics": "src/optical-map.js: cached rounded-rectangle normals, a 5–8px unblurred edge displacement mask, magnification and Gaussian blur; an inset CSS reading-diffusion plate precedes SVG optics. White concentration updates both the plate and other app surfaces."
+}

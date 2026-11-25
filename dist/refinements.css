@@ -1,0 +1,38 @@
+/* Every quick action fits its own card, including compact cards and enlarged text. */
+body.desktop-app .card-quick-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;width:100%;min-width:0}
+body.desktop-app .card-quick-actions .action-pill{box-sizing:border-box;min-width:0;width:100%;max-width:100%;padding:7px 5px;gap:4px;justify-content:center;white-space:nowrap;font-size:10px}
+body.desktop-app .card-quick-actions .action-pill svg{flex:0 0 13px;width:13px;height:13px}
+body.desktop-app .card-quick-actions .action-pill span{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.media-card .media-caption{min-width:0;max-width:100%;box-sizing:border-box}.media-card .personal-rating{min-width:0;flex-wrap:wrap}
+.desktop-app .masonry-grid{position:relative;display:block!important;columns:unset;min-height:0}
+.desktop-app .masonry-grid>.media-card{position:absolute;display:block;box-sizing:border-box;margin:0;min-width:0;max-width:100%;break-inside:avoid}
+.desktop-app[data-density=compact] .masonry-grid .media-caption{padding:9px 7px}
+.desktop-app[data-density=compact] .masonry-grid .media-caption h3{font-size:11px;line-height:1.65}
+.desktop-app[data-density=compact] .masonry-grid .media-caption>p{font-size:9px}
+.desktop-app[data-density=compact] .masonry-grid .card-quick-actions{gap:4px}
+.desktop-app[data-density=compact] .masonry-grid .card-quick-actions .action-pill{font-size:9px;padding:6px 2px;gap:2px}
+.desktop-app[data-density=compact] .masonry-grid .card-quick-actions svg{width:11px;height:11px;flex-basis:11px}
+.personal-material-drop{position:relative;border-radius:16px;padding:1px;transition:background .16s,box-shadow .16s;min-width:0}
+.personal-material-drop.drag-active{background:color-mix(in srgb,var(--accent) 8%,transparent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 65%,transparent)}
+.personal-material-drop.drag-active .material-drop-hint{color:var(--accent);background:var(--surface);border-color:var(--accent)}
+.materials-heading{flex-wrap:wrap}.materials-heading h3{margin-right:auto}.material-size-control{display:flex;gap:8px;align-items:center;font-size:10px;color:var(--subtle)}.material-size-control input{width:90px;height:4px;accent-color:var(--accent)}.material-size-control output{font-size:10px;font-variant-numeric:tabular-nums;min-width:22px;color:var(--quiet)}
+.personal-space .materials-masonry{display:flex!important;flex-flow:row wrap;align-items:flex-start;align-content:flex-start;gap:12px;columns:unset;min-width:0}
+.personal-space .material-tile{flex:none;max-width:100%;min-width:0;width:180px;margin:0;display:block;border:0;border-radius:10px;box-shadow:none;background:transparent;overflow:visible}
+.material-visual{position:relative;width:100%;height:156px;overflow:hidden;border-radius:9px;background:var(--surface2)}
+.material-visual>button[data-personal-image]{padding:0;width:100%;height:100%;display:block}
+.personal-space .material-visual :is(img,video){display:block;width:100%;height:100%;max-height:100%;object-fit:contain;aspect-ratio:unset}
+.personal-space .material-tile figcaption{height:36px;padding:5px 1px;box-sizing:border-box;gap:4px;line-height:1.5}
+.material-visual .material-magnify{position:absolute;right:7px;bottom:7px;display:grid;place-items:center;z-index:2;width:29px;height:29px;border-radius:10px;padding:0;border:1px solid #ffffff6b;background:#172035a8;color:white;backdrop-filter:blur(10px);opacity:0;transform:translateY(3px);transition:opacity .15s,transform .15s;cursor:zoom-in}
+.material-magnify svg{height:17px;width:17px;stroke-width:1.6}.material-tile:hover .material-magnify,.material-tile:focus-within .material-magnify{opacity:1;transform:none}.material-magnify:hover{background:#253d69dc}
+.material-video-start{position:absolute;inset:0;display:grid;place-items:center;padding:0;width:100%;height:100%;color:white;background:transparent;cursor:pointer}.material-video-start>span{display:grid;place-items:center;height:34px;width:34px;border-radius:50%;background:#1522368c;border:1px solid #ffffff75;backdrop-filter:blur(8px);box-shadow:0 3px 12px #06102024}.material-video-start svg{width:16px;height:16px;margin-left:2px;fill:#ffffffb3;stroke-width:1.4}.material-video-start:focus-visible{outline-offset:-4px}
+.material-hover-preview{position:fixed;inset:0;z-index:1200;display:flex;justify-content:center;align-items:center;padding:30px;pointer-events:none;opacity:0;visibility:hidden;background:#080d1c42;transition:opacity .18s ease,visibility .18s;box-sizing:border-box}
+.material-hover-preview.visible{opacity:1;visibility:visible}.material-preview-frame{max-width:100%;max-height:100%;border:1px solid #ffffff75;border-radius:13px;box-shadow:0 18px 70px #05091766;overflow:hidden;background:#10131be6;position:relative}
+.material-preview-frame img{display:block;max-width:calc(100vw - 60px);max-height:calc(100dvh - 60px);width:auto;height:auto;object-fit:contain}.material-preview-frame>span{position:absolute;left:0;right:0;bottom:0;padding:20px 14px 10px;background:linear-gradient(transparent,#0009);color:white;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.material-video-lightbox video{max-width:90vw;max-height:90dvh;border-radius:15px}.material-video-lightbox button{position:absolute;top:20px;right:20px}
+/* Local glass plates preserve readable text over a transparent desktop. */
+body.liquid-ui[data-background=transparent]{--clear-plate:255 255 255}
+body.liquid-ui[data-background=transparent] main{background:rgb(var(--clear-plate) / var(--backdrop-tint))}
+body.liquid-ui[data-background=transparent] .heading-row{border-radius:20px;background:rgb(var(--clear-plate) / var(--glass-fill-alpha));padding:20px;margin-bottom:22px}
+body.liquid-ui[data-background=transparent] .catalog-summary,body.liquid-ui[data-background=transparent] .discovery-layout{background:rgb(var(--clear-plate) / var(--glass-fill-alpha));border-radius:12px;padding:10px 14px}
+body.liquid-ui:not([data-theme=day])[data-background=transparent]{--clear-plate:18 25 44}
+@media(prefers-reduced-motion:reduce){.material-hover-preview,.material-magnify,.personal-material-drop{transition:none}}

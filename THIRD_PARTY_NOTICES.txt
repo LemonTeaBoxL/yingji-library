@@ -1,0 +1,33 @@
+Electron 45.4.1 is distributed under the MIT license. Its distribution includes LICENSE and LICENSES.chromium.html.
+sql.js 1.17.0 is distributed under the MIT license; see dist/vendor/sql-js-LICENSE.txt.
+FFmpeg and FFprobe 9.0.1 essentials build are distributed under GPL v3; see tools/LICENSE and tools/README.txt for license, corresponding source reference and build information.
+FFmpeg build source reference: https://github.com/FFmpeg/FFmpeg/commit/bf1b838f2a
+Bangumi work metadata and images belong to their respective contributors and rightsholders. Data source: https://bangumi.tv / https://github.com/bangumi/api
+This product uses the TMDB API but is not endorsed or certified by TMDB. Metadata and images: https://www.themoviedb.org
+
+Hyalite 0.5.0 (unmodified runtime), MIT License, Copyright (c) 2026 VII-Cae (VII).
+Source: https://github.com/VII-Cae/hyalite--liquid-glass
+Source commit: b9f27192a7256bf5295bf027b582b86864f9b59d
+License: dist/vendor/hyalite-LICENSE.txt
+
+The glass layering and interaction design also reference liquid-glass-react.
+MIT License, Copyright (c) 2025 MAX ROVENSKY.
+Source: https://github.com/rdev/liquid-glass-react
+Source commit: ac48eab18d1f7f444ae30002d240cae29c863a21
+License: dist/vendor/liquid-glass-react-LICENSE.txt
+This app integrates Hyalite with its existing vanilla JavaScript renderer, without a React runtime.
+The liquid-silk.svg background and the rounded outline icons are project-created vector assets.
+
+Noto Sans SC (unmodified variable font), Copyright 2014-2021 Adobe.
+SIL Open Font License 1.1; full license: dist/fonts/NotoSansSC-OFL.txt
+Source: https://github.com/google/fonts/tree/main/ofl/notosanssc
+
+Liquid Glass React 1.1.1, Copyright 2025 MAX ROVENSKY, MIT.
+https://github.com/rdev/liquid-glass-react
+Actual unmodified upstream component bundled with React/React DOM; full licenses: dist/vendor/rdev-glass-LICENSE.txt.
+Build adapter: src/rdev-glass.jsx. Native desktop transparency is supplied by Electron/Windows.
+
+Interface and motion guidance: Emil Kowalski, Skills For Designers and Engineers.
+https://github.com/emilkowalski/skills
+Copyright (c) 2026 Emil Kowalski, MIT; license: dist/vendor/emil-skills-LICENSE.txt.
+Applied restraint, direct input feedback, origin-aware popovers, exact transition properties, compositor-friendly effects, reduced-motion and contrast preferences.

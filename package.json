@@ -1,0 +1,26 @@
+{
+  "name": "yingji-local-library",
+  "productName": "映迹资料库",
+  "version": "0.4.14",
+  "description": "按年份探索作品，记录观看与收藏，管理本地素材",
+  "main": "main.cjs",
+  "private": true,
+  "author": "Yingji",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "preview": "node scripts/serve.mjs",
+    "check": "node --check main.cjs && node --check preload.cjs && node --check dist/appearance.js && node --check dist/app.js && node --check dist/desktop.js && node --check dist/liquid-glass.js && node --check dist/features.js && node --check dist/glass-menus.js && node --check dist/gallery-layout.js && node --check dist/refinements.js && node --check dist/vendor/rdev-glass.js && node --check dist/motion.js && node --check dist/native-glass.js && node --check dist/usability.js && node --check dist/entry-order.js && node --check dist/workspace-ui.js && node --check dist/episode-progress.js && node --check dist/library-vault.js && node --check lib/portable-store.cjs && node --check lib/storage-main.cjs && node --check lib/webdav-library.cjs && node --check dist/owned-library.js && node --check lib/managed-imports.cjs && node --check lib/safe-purge.cjs && node --check dist/source-order.js && node --check lib/bangumi-browser.cjs && node --check lib/catalog-login.cjs && node --check dist/discovery-session.js && node --check dist/chrome-login.js && node --check dist/unmark.js && node --check lib/chrome-login.cjs && node --check lib/unmark-entry.cjs && node --check dist/marking-ui.js && node --check dist/catalog-loading.js && node --check lib/catalog-request.cjs && node --test tests/*.test.cjs",
+    "package": "npm run build:glass && electron-builder --config electron-builder.cjs --win portable --x64 --publish never",
+    "build:glass": "node scripts/build-glass.cjs"
+  },
+  "devDependencies": {
+    "@electron/packager": "19.0.1",
+    "electron": "45.4.1",
+    "electron-builder": "^26.18.0",
+    "esbuild": "0.25.12",
+    "liquid-glass-react": "1.1.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  }
+}

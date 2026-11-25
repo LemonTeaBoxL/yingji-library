@@ -1,0 +1,56 @@
+/* Preserve the upstream filter and keep application foregrounds outside it. */
+body.liquid-ui[data-glass-engine=rdev] .app-shell{isolation:auto;z-index:2}
+body.liquid-ui .rdev-glass-host{position:relative;isolation:auto;z-index:0;background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+body.liquid-ui .rdev-glass-host.glass-preview-tile{position:absolute;z-index:1}
+.rdev-react-root{position:absolute;z-index:0;pointer-events:none!important;overflow:visible;user-select:none;backdrop-filter:var(--rdev-optics,blur(var(--glass-blur))) saturate(1.15);border-radius:inherit;--glass-light-angle:135deg;--glass-light-x:22%}
+.rdev-optical-defs{position:absolute;width:0;height:0;overflow:hidden}
+.rdev-body-surface{position:fixed;z-index:1}.rdev-local-surface{position:absolute;z-index:0}.rdev-react-root[hidden]{display:none}
+body.liquid-ui #overlay{position:absolute;z-index:auto;isolation:auto;background:transparent;backdrop-filter:none!important}
+body.liquid-ui #overlay:before{content:'';position:fixed;inset:0;z-index:29;background:#26395426;backdrop-filter:none;pointer-events:auto}
+body.liquid-ui #overlay>.sheet{z-index:31;outline:none}
+.rdev-modal-surface{z-index:30}
+.rdev-react-root *{pointer-events:none!important}
+.rdev-react-root>div,.rdev-react-root>span{transition:none!important}
+.rdev-react-root .rdev-shell{width:100%;height:100%}
+.rdev-react-root .rdev-shell>.glass{display:flex!important;box-sizing:border-box;width:100%;height:100%;padding:0!important;background:transparent;transition:none!important;box-shadow:none!important}
+.rdev-react-root .glass:after{content:'';position:absolute;inset:0;border-radius:inherit;background:rgb(var(--glass-fill-rgb) / var(--glass-fill-alpha));pointer-events:none}
+.rdev-react-root .rdev-shell>.glass>div{font:inherit!important;text-shadow:none!important;line-height:0!important}
+.rdev-react-root .rdev-shell>.glass>.glass__warp{display:none!important}
+.rdev-react-root>.bg-black{display:none!important}.rdev-react-root .rdev-size{opacity:0}
+.rdev-react-root:after{content:'';position:absolute;inset:0;z-index:4;border-radius:inherit;padding:.8px;background:conic-gradient(from var(--glass-light-angle),#ffffffc9,#ffffff0a 17%,#132a4a26 28%,#ffffffb2 45%,#ffffff16 64%,#12284418 76%,#ffffffde);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;pointer-events:none}
+.rdev-react-root:before{content:'';position:absolute;inset:1px;z-index:3;border-radius:inherit;padding:1px;background:conic-gradient(from var(--glass-light-angle),#ffffff45,#ffffff00 24%,#ffffff05 40%,#ffffff63 51%,#ffffff00 73%,#ffffff36);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask-composite:exclude;opacity:.22;pointer-events:none}
+body.liquid-ui:not([data-theme=day]) .rdev-react-root .glass:after{background:rgb(18 25 44 / var(--glass-fill-alpha))}
+body.liquid-ui:not([data-theme=day]) .rdev-react-root:after{opacity:.65}
+/* Reading a long detail must stay comfortable over dark cover art. */
+body.liquid-ui .rdev-modal-surface .glass:after{background:transparent!important}
+.rdev-reading-diffusion{position:fixed;z-index:30;pointer-events:none;backdrop-filter:blur(var(--reading-frost,18px));background:rgb(var(--reading-fill,247 250 255) / var(--reading-opacity,.6224));overflow:hidden;user-select:none}
+.rdev-reading-diffusion[hidden]{display:none}
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer] .rdev-reading-diffusion{opacity:1;transition:opacity 200ms var(--motion-out)}
+body.liquid-ui[data-app-motion=full][data-input-mode=pointer]:has(#overlay[hidden]) .rdev-reading-diffusion{opacity:0;transition-duration:140ms}
+@starting-style{body.liquid-ui[data-app-motion=full][data-input-mode=pointer] .rdev-reading-diffusion{opacity:0}}
+/* Acrylic handles the external desktop. App content remains available to panel optics. */
+body.liquid-ui[data-background=desktop]{--glass-ink:#233148;--glass-sub:#43536a;--glass-quiet:#56677c}
+body.liquid-ui[data-background=desktop] .app-shell{background:rgb(247 250 255 / .22)!important}
+body.liquid-ui[data-background=desktop]:not([data-theme=day]){--glass-ink:#f1f5ff;--glass-sub:#c0cee4;--glass-quiet:#a7bbd5}
+body.liquid-ui[data-background=desktop]:not([data-theme=day]) .app-shell{background:rgb(12 20 36 / .22)!important}
+body.desktop-app .app-shell:after{content:'';position:absolute;inset:0;z-index:2000;pointer-events:none;border:1px solid #ffffffa8;border-radius:9px;box-shadow:inset 0 1px 0 #ffffff52}
+body.desktop-app:not([data-theme=day]) .app-shell:after{border-color:#ffffff4d}
+body.window-maximized .app-shell:after{border-radius:0}
+.rdev-engine-note{font-size:11px;color:var(--subtle);line-height:1.8;margin:14px 0 0}.glass-refraction-slider{margin-top:18px}
+.glass-slider-row input:disabled{opacity:.45;cursor:default}.glass-slider-row input:disabled+small{color:var(--subtle)}
+.sidebar-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:14px 5px 22px 3px;scroll-padding-block:18px;mask-image:linear-gradient(to bottom,transparent,#000 14px,#000 calc(100% - 14px),transparent)}
+body.desktop-app .sidebar-scroll::-webkit-scrollbar{width:4px}
+body.desktop-app .sidebar{overflow:hidden}
+body.desktop-app .sidebar-brand{flex-shrink:0;min-height:74px}
+body.liquid-ui .sidebar{padding:24px 16px 20px}
+body.liquid-ui .sidebar-brand{padding:8px 9px 22px}
+body.desktop-app .sidebar-bottom{flex-shrink:0;margin-top:0;padding-top:18px}
+body.liquid-ui .sidebar-nav{gap:5px}
+body.liquid-ui .sidebar-nav button{height:44px;min-height:44px;padding-block:6px}
+@media(max-height:720px){body.desktop-app .sidebar-bottom>span{display:none}body.liquid-ui .sidebar-brand{padding-bottom:14px;min-height:64px}body.liquid-ui .sidebar{padding-block:18px}.sidebar-scroll{padding-top:10px;padding-bottom:18px}}
+@media(prefers-reduced-motion:reduce){.rdev-react-root *{transition:none!important;animation:none!important}}
+
+body.liquid-ui .feature-detail.rdev-glass-host:not([data-material-ready=true]){background:rgb(247 250 255 / .96)!important;backdrop-filter:blur(24px)!important}
+body.liquid-ui:not([data-theme=day]) .feature-detail.rdev-glass-host:not([data-material-ready=true]){background:rgb(18 25 44 / .97)!important}
+/* Diffusion precedes edge optics so it does not blur away the thin refracted rim. */
+@media(prefers-reduced-transparency:reduce){.rdev-reading-diffusion{backdrop-filter:none;background:var(--page)!important}}

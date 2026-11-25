@@ -1,0 +1,15 @@
+@font-face{font-family:'Yingji UI';src:url('./fonts/NotoSansSC-Variable.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap}
+:root{--ui-font:'PingFang SC','Yingji UI','Microsoft YaHei UI','Microsoft YaHei',sans-serif}
+html,body,body.desktop-app,body.desktop-app :is(h1,h2,h3,h4,p,span,a,label,button,input,select,textarea,output,summary,td,th,dt,dd),body.desktop-app .liquid-icon{font-family:var(--ui-font);font-synthesis:none}
+body.desktop-app{font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body.desktop-app .heading-row h1,body.desktop-app h1{font-family:var(--ui-font);font-weight:500;line-height:1.55;letter-spacing:-.45px}
+body.desktop-app h1 em{font-weight:400;letter-spacing:-.25px}
+body.desktop-app .detail-title{font-family:var(--ui-font);font-weight:500;letter-spacing:-.25px;line-height:1.5}
+body.desktop-app :is(.work-title,.media-card h3,.catalog-row h3,.settings-panel-heading h3,.glass-settings-title h3,.panel h3){font-weight:500;letter-spacing:0}
+body.desktop-app :is(.intro,.detail-description,.personal-review){line-height:1.9;letter-spacing:.05px;font-weight:400}
+body.desktop-app .sidebar-brand b{font-family:var(--ui-font);font-weight:550;letter-spacing:2px}
+body.desktop-app .sidebar-nav button{font-weight:400}
+body.desktop-app .sidebar-nav button.active{font-weight:500}
+body.desktop-app :is(.library-summary strong,.cache-total strong){font-family:var(--ui-font);font-weight:350;font-variant-numeric:tabular-nums}
+body.desktop-app :is(.brand-caption,.window-titlebar,.app-statusbar,.type-badge,.stars-number){font-family:var(--ui-font)}
+body.desktop-app :is(.connection-code,.time-readout,.raw-field dd){font-family:'Cascadia Mono','Consolas',monospace}
