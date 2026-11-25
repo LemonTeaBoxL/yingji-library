@@ -6,7 +6,7 @@
 
 - 旧版程序、发行包和截图已归入 历史版本/，目录清单见 历史版本/目录.json。当前版与启动快捷方式仍在根目录；Git 跟踪源码，最新程序作为 Release 附件，work/用户资料/依赖/二进制不提交。
 
-- GitHub 私有仓库 https://github.com/LemonTeaBoxL/yingji-library，origin/main；GitHub CLI 位置见 work/git-tools-location.json，使用已授权账号，后续无需重复询问上传授权。具体发布流程见 docs/GITHUB.md。
+- GitHub 私有仓库 https://github.com/LemonTeaBoxL/yingji-library，origin/main；GitHub CLI 位置见 work/git-tools-location.json，用户要求上传时复用已授权账号与现有配置。具体发布流程见 docs/GITHUB.md。
 
 ## 用户偏好与读取方式
 
