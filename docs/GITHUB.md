@@ -1,8 +1,8 @@
 # GitHub 仓库与发布
 
 - 仓库：https://github.com/LemonTeaBoxL/yingji-library
-- 可见性：私有；默认分支：`main`。
-- 当前发行标签：`v0.4.14`。
+- 可见性：公开（沿用仓库当前设置）；默认分支：`main`。
+- 当前发行标签：`v0.4.15`。
 - 提交署名：TeaBox Lemon；使用 GitHub 隐私邮箱。
 - 源码、依赖锁定文件、项目索引、使用说明与归档目录清单提交到 Git。
 - 最新 Windows 程序放在 Release 附件；旧版二进制文件保留在本机“历史版本”。

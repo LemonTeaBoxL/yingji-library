@@ -1,0 +1,23 @@
+{
+  "version": "0.4.15",
+  "passed": true,
+  "fullChecksBeforeFinalCountAdjustment": 76,
+  "focusedChecksAfterFinalCountAdjustment": 5,
+  "sourceChecks": 19,
+  "packedChecks": 19,
+  "sourceFilesMatched": 103,
+  "rendererErrors": [],
+  "testing": "Isolated library: record-only All page; local media access; category migration and new Music record; cover menu, owned copy, cancel/reset, media-count isolation and unchanged source; public book/music page replay, catalog formats and source links; TMDB unsupported-media fallback.",
+  "userLibraryModified": false,
+  "portable": {
+    "passed": true,
+    "isolatedProfile": true,
+    "items": 1,
+    "legacyMigrated": "desktop",
+    "readOnly": true
+  },
+  "executable": {
+    "bytes": 174906636,
+    "sha256": "1b94fb18e1b4887007d2b4d4816d2898608163e823ddbd6e88935a88fc30a2b6"
+  }
+}

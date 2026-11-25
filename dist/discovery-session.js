@@ -28,5 +28,5 @@
   };
   // User movement wins over the two-frame layout restoration.
   for(const name of ['wheel','pointerdown','keydown'])mainElement.addEventListener(name,()=>{epoch++},{passive:true});
-  window.YingjiDiscoverySession={version:'0.4.14'};
+  window.YingjiDiscoverySession={version:'0.4.15'};
 })();

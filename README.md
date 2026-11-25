@@ -2,15 +2,25 @@
 
 Windows 桌面作品与素材资料库。按年份探索作品，记录看过、待看、在看与收藏，并保存个人评分、观后感和图片、视频素材。
 
-当前版本：**0.4.14**。
+当前源码版本：**0.4.15**。
 
-[下载最新版程序](https://github.com/LemonTeaBoxL/yingji-library/releases/tag/v0.4.14) · [全部发行版本](https://github.com/LemonTeaBoxL/yingji-library/releases)
+[下载最新版程序](https://github.com/LemonTeaBoxL/yingji-library/releases/tag/v0.4.15) · [全部发行版本](https://github.com/LemonTeaBoxL/yingji-library/releases)
+
+## 界面预览
+
+![发现作品与封面瀑布流](docs/screenshots/discovery-movies.png)
+
+| 作品详情与单集进度 | 我的空间与素材 |
+| --- | --- |
+| ![作品详情与单集进度](docs/screenshots/entry-details.png) | ![我的空间与素材](docs/screenshots/personal-space.png) |
+
+截图拍摄于 0.4.14。当前版本的分类与新功能以更新说明为准。[查看完整 7 张界面截图](docs/screenshots/README.md)。
 
 ## 使用
 
 从本仓库的 Releases 下载最新版 Windows x64 便携程序，退出旧版后双击运行。个人资料保存在用户选择的文件夹，升级程序保留资料。
 
-- Bangumi 动画、影视和游戏资料浏览，提供年份、季度、地区、形式、评分筛选与源网页排序。
+- Bangumi 动画、影视、游戏、书籍和音乐资料浏览，提供年份、季度、地区、形式、评分筛选与源网页排序。
 - 个人库连续瀑布流、列表与封面显示，支持搜索、筛选、排序和多选。
 - 作品与单集评分、评论和观看进度；作品网页资料与“我的空间”独立呈现。
 - 图片、视频拖入后复制到资料库；支持素材预览、框选、多选和视频截帧、裁切。

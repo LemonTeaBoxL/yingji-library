@@ -1,5 +1,5 @@
 {
-  "currentVersion": "0.4.14",
+  "currentVersion": "0.4.15",
   "files": [
     {
       "sha256": "0abe476be0d8662a98e6d913c820663a7f68e551ba1ec54390d7517fcd3d54d5",
@@ -312,7 +312,19 @@
       "path": "历史版本\\0.4.9\\发行包\\映迹资料库-0.4.9-Windows-x64.exe",
       "original": "releases\\映迹资料库-0.4.9-Windows-x64.exe",
       "bytes": 174897512
+    },
+    {
+      "original": "releases\\映迹资料库-0.4.14-Windows-x64.exe",
+      "sha256": "9d74763e09120edff3925d9d1e60e5f1c758f8a85f144be186b3084e864e51c4",
+      "path": "历史版本\\0.4.14\\发行包\\映迹资料库-0.4.14-Windows-x64.exe",
+      "bytes": 174920368
     }
   ],
-  "archivedOn": "2026-11-25"
+  "archivedOn": "2026-11-25",
+  "deferred": [
+    {
+      "original": "映迹资料库-0.4.14.exe",
+      "reason": "旧版程序仍在使用，保留根目录，不关闭用户程序。"
+    }
+  ]
 }

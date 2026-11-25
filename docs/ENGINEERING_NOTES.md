@@ -109,3 +109,10 @@
 - watchLibraryMore 在 scheduleCatalogWalls 之后等两帧观察，避免绝对定位布局尚未完成时误判底部。每次渲染/导航递增 epoch 并断开旧 observer，回调再次检查路由、视图、节点连接和详情关闭状态；单次只排一个追加回调。详情打开暂停，关闭后重新观察。不能把容器 data-layout-view 改为 data-view。
 - 继续使用 keyed reconcile 保留已有卡片节点、位置、缩略图与选择；加载完成显示总数并停止观察，空结果不观察。不要一次创建全部条目的 DOM，也不要对自然滚动调用 scrollTo 强制定位。
 - 本次 6 项相关功能测试，源码/发行各 21 项隔离 UI 检查（220 作品与 100 素材、各个人路由、筛选排序、多选、详情、切页、空结果和列表兼容），独立 EXE 启动及 100 个资源比对通过；未操作真实用户资料库。报告 work/release-0.4.14-verification.json。
+
+## 0.4.15 实现约定
+- 全部条目固定仅展示 type=record，隐藏类型页签；本地素材页仍提供图片/视频/数据库。dist/marking.js 的 visibleIds 排除仅作封面的 coverOnly 副本，除非它还被 materialIds 显式关联；封面仍可通过主进程 itemIndex 正常读取。
+- 分类集中在 dist/categories.js（UMD）：默认电影/动漫/电视剧/书籍/漫画/游戏/音乐/其它。精确“小说”兼容映射“书籍”，涉及记录、覆盖、更改和筛选记忆；保留自定义分类、评分和素材等其他字段。读取迁移由 PortableStore 统一执行，写入由 commitLibrary 归一化。
+- 手动 record 的卡片/列表/详情封面右键在 dist/entry-customization.js 显示菜单；main.pickEntryCover 使用原生图片选择、解码检查和 activeMutations，lib/entry-cover.cjs 通过 copyLinks 创建 entries/<id>/materials 下的独立 coverOnly 副本。只合并 coverId 到最新状态，避免覆盖后台资料/草稿；取消不变，恢复默认置空 coverId。替换后的旧副本暂保留为隐藏副本，整条删除/清空仍走既有安全清理；不把封面自动加入 materialIds，不改源文件。
+- Bangumi 书籍/音乐分别使用 /book/browser、/music/browser，公开接口 type 1/3，支持搜索与年份等现有筛选；动画形式在界面和请求两端忽略。TMDB 不支持书籍/音乐/游戏，切换时回退电影并禁用相应选项；恢复筛选记忆时同步兼容。音乐主创读取艺术家/作曲/编曲/作词/厂牌等字段。
+- 完整检查 76 项通过后增加封面计数隔离，定向 5 项通过；源码及发行资源各 19 项隔离界面检查、独立 EXE 启动、103 个资源比对通过。公开网页快照回放覆盖书籍和音乐；未修改真实用户资料库。报告 docs/verification-0.4.15.json。

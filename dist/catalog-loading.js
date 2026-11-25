@@ -1,6 +1,6 @@
 'use strict';
 (function(){
-  const loading={version:'0.4.14',timeoutMs:26000,emptyPageLimit:3};
+  const loading={version:'0.4.15',timeoutMs:26000,emptyPageLimit:3};
   const visibleIds=()=>new Set((window.YingjiUsability?.catalogVisible?.()||catalogClient.items).map(item=>item.id));
   const message=error=>String(error?.message||error||'读取失败，请重试').replace(/^Error invoking remote method '[^']+': (?:Error: )?/,'');
 

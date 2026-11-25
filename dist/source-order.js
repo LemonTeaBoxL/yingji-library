@@ -29,5 +29,5 @@
   const renderBase=renderCatalogResults;renderCatalogResults=function(){renderBase();sync();
     if(catalogClient.provider==='bangumi'&&catalogClient.error?.includes('登录')&&!$('#catalogResults [data-catalog-login]'))$('#catalogResults .catalog-page-footer')?.insertAdjacentHTML('beforeend','<button class="button secondary" data-catalog-login>登录 Bangumi 后重试</button>');
   };
-  window.YingjiSourceOrder={version:'0.4.14',sync};sync();
+  window.YingjiSourceOrder={version:'0.4.15',sync};sync();
 })();

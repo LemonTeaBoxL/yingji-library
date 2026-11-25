@@ -7,5 +7,5 @@
    document.querySelectorAll('[data-marked-view]').forEach(button=>button.setAttribute('aria-selected',String(button.dataset.markedView===state.markedView)));
    renderResults();YingjiMenus.hydrate();
  };
- if(state.tab==='library')renderLibrary();window.YingjiMarkingUI={version:'0.4.14'};
+ if(state.tab==='library')renderLibrary();window.YingjiMarkingUI={version:'0.4.15'};
 })();

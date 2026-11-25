@@ -2,11 +2,11 @@
 
 唯一目录：D:\00.AiWorkSpace\20261123-作品观看记录工具。所有源码、命令、测试与打包在此；临时文件放 work，发行包放 releases。不得在旧聊天目录创建副本。用户要求不使用额度重置卡。
 
-- 当前版本 0.4.14；根目录 映迹资料库-0.4.14.exe，启动映迹.lnk 指向该文件，归档 releases/映迹资料库-0.4.14-Windows-x64.exe。报告 work/release-0.4.14-verification.json。
+- 当前版本 0.4.15；根目录 映迹资料库-0.4.15.exe，启动映迹.lnk 指向该文件，归档 releases/映迹资料库-0.4.15-Windows-x64.exe。报告 work/release-0.4.15-verification.json。
 
 - 旧版程序、发行包和截图已归入 历史版本/，目录清单见 历史版本/目录.json。当前版与启动快捷方式仍在根目录；Git 跟踪源码，最新程序作为 Release 附件，work/用户资料/依赖/二进制不提交。
 
-- GitHub 私有仓库 https://github.com/LemonTeaBoxL/yingji-library，origin/main；GitHub CLI 位置见 work/git-tools-location.json，用户要求上传时复用已授权账号与现有配置。具体发布流程见 docs/GITHUB.md。
+- GitHub 仓库 https://github.com/LemonTeaBoxL/yingji-library，origin/main；GitHub CLI 位置见 work/git-tools-location.json，用户要求上传时复用已授权账号与现有配置。具体发布流程见 docs/GITHUB.md。
 
 ## 用户偏好与读取方式
 
@@ -26,6 +26,6 @@
 - Chrome 同步仅用户选择的 Bangumi 站点、一次性本机接口；禁止解密外部浏览器数据库或读取其他站点。AI 接口仍只读；WebDAV 为手动快照。
 - 页面模块存在后加载覆盖，先按索引找到最终实现，不误改已被覆盖的旧函数。
 
-## 0.4.14 实现约定
+## 0.4.15 实现约定
 
-详见 docs/ENGINEERING_NOTES.md 对应章节；最新网页行解析为 lib/bangumi-browser.cjs 的 browserRows，缓存格式 browser:3；发现页载入入口仍为 dist/catalog-loading.js。个人库瀑布流自动追加在 dist/usability.js 的 watchLibraryMore，必须等待布局后观察底部，并保留 epoch/详情暂停保护。
+详见 docs/ENGINEERING_NOTES.md 对应章节。分类与“小说→书籍”兼容集中在 dist/categories.js；手动条目封面入口 dist/entry-customization.js，主进程复制 lib/entry-cover.cjs。全部条目仅显示 record，封面专用副本不计入本地素材。Bangumi 书籍/音乐使用各自网页路径及 API type 1/3，不套用动画形式。发现页载入仍为 dist/catalog-loading.js；个人库自动追加在 dist/usability.js 的 watchLibraryMore，保留布局等待、epoch 和详情暂停保护。
